@@ -1,0 +1,422 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#date: 28-04-2020"
+      },
+      {
+        "line": 4,
+        "value": "#author: Felipe Almeida da Silva"
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12743898400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeStartWebWindows()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Finalizar a compra com sucesso",
+        "description": "",
+        "id": "finalizar-a-compra;finalizar-a-compra-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 792265100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterStartWebWindows(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1997132900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que adiciono um produto ao carrinho",
+            "match": {
+              "location": "CompraWebSteps.queAdicionoUmProdutoAoCarrinho()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 342322900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "acesso o carrinho",
+            "match": {
+              "location": "CompraWebSteps.acessoOCarrinho()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 358038900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico em \u0027CHECKOUT\u0027",
+            "match": {
+              "location": "CompraWebSteps.clicoEmCHECKOUT()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 366148900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "preencho as informacoes",
+            "match": {
+              "location": "CompraWebSteps.preenchoAsInformacoes()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 361106800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clico em \u0027CONTINUE\u0027",
+            "match": {
+              "location": "CompraWebSteps.clicoEmCONTINUE()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 651875500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico em \u0027FINISH\u0027",
+            "match": {
+              "location": "CompraWebSteps.clicoEmFINISH()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 41584400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "exibe na tela \"THANK YOU FOR YOUR ORDER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "THANK YOU FOR YOUR ORDER",
+                  "offset": 15
+                }
+              ],
+              "location": "CompraWebSteps.exibeNaTela(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@startWeb"
+          },
+          {
+            "line": 8,
+            "name": "@compraSaucedemo"
+          }
+        ]
+      }
+    ],
+    "name": "Finalizar a compra",
+    "description": "Finalizar a compra dos produtos adicionados",
+    "id": "finalizar-a-compra",
+    "keyword": "Funcionalidade",
+    "uri": "Compra.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#date: 16-04-2020"
+      },
+      {
+        "line": 4,
+        "value": "#author: Felipe Almeida da Silva"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11153142000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeStartWebWindows()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar meu login com sucesso",
+        "description": "",
+        "id": "realizar-o-login-no-site;realizar-meu-login-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 1012561100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterStartWebWindows(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 254690900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que preencho os campos com login e senha validos",
+            "match": {
+              "location": "LoginWebSteps.quePreenchoOsCamposComLoginESenhaValidos()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1509923500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no botao de \u0027LOGIN\u0027",
+            "match": {
+              "location": "LoginWebSteps.clicoNoBotaoDeLOGIN()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 139319900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo a pagina de \"Products\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Products",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginWebSteps.visualizoAPaginaDe(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@startWeb"
+          },
+          {
+            "line": 9,
+            "name": "@loginSaucedemo"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar o login no site",
+    "description": "Realizar o login no site da Saucedemo",
+    "id": "realizar-o-login-no-site",
+    "keyword": "Funcionalidade",
+    "uri": "Login.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#date: 27-04-2020"
+      },
+      {
+        "line": 4,
+        "value": "#author: Felipe Almeida da Silva"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11575124300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeStartWebWindows()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Adicionar os produtos com sucesso",
+        "description": "",
+        "id": "adicionar-produtos-no-carrinho;adicionar-os-produtos-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 810688100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterStartWebWindows(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1390177400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que realizo o login no sistema",
+            "match": {
+              "location": "ProdutosWebSteps.queRealizoOLoginNoSistema()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 132368600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "adiciono o primeiro produto visivel",
+            "match": {
+              "location": "ProdutosWebSteps.adicionoOPrimeiroProdutoVisivel()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 147937900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "filtro os produto mais caros",
+            "match": {
+              "location": "ProdutosWebSteps.filtroOsProdutoMaisCaros()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 154977400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "adiciono o primeiro produto da lsita",
+            "match": {
+              "location": "ProdutosWebSteps.adicionoOPrimeiroProdutoDaLsita()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 297298300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico no carrinho de compras",
+            "match": {
+              "location": "ProdutosWebSteps.clicoNoCarrinhoDeCompras()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 57677000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "visualizo \"Your Cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your Cart",
+                  "offset": 11
+                }
+              ],
+              "location": "ProdutosWebSteps.visualizo(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@startWeb"
+          },
+          {
+            "line": 9,
+            "name": "@produtosSaucedemo"
+          }
+        ]
+      }
+    ],
+    "name": "Adicionar produtos no carrinho",
+    "description": "Adicionar os produtos da Saucedemo no carrinho",
+    "id": "adicionar-produtos-no-carrinho",
+    "keyword": "Funcionalidade",
+    "uri": "Produtos.feature"
+  }
+]
